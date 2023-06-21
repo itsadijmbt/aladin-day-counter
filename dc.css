@@ -1,0 +1,293 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-bg{
+  font-family: 'Chokokutai', cursive;
+  background-image: linear-gradient(lightskyblue,white,white,lightskyblue
+  );
+  height:100vh;
+
+  align-items: center;
+}
+.hello{
+  font-family: 'Chokokutai', cursive;
+  font-size: 5rem;
+  padding-left: 38%;
+}
+.intro-page{
+  position: relative;
+  font-family: 'Chokokutai', cursive;
+  display: flex;
+ margin-top: 5%;
+
+  align-items: center;
+ 
+}
+.welcome-qsn{
+
+  height: 10rem;
+margin-top: 5rem;
+  margin-left: 2rem;
+  display: flex;
+ margin-bottom: 10%;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.border{
+  position:absolute;
+  left: 32%;
+  z-index: 0;
+  
+}
+.welcome-qsn-after::after
+{
+  content:'';
+  position:absolute;
+  width: 70rem;
+  height: 3.5rem;
+  top: 25%;
+  right: 12%;
+  animation: adi;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  background-color: white;
+
+}
+@keyframes adi {
+
+  from{
+    width: 70rem;
+  }
+  to{
+    width: 0rem;
+  }
+}
+
+.welcome-image{
+  
+  animation: img;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes img {
+  0%{
+    transform: translateY(0%);
+
+  }
+  50%{
+    transform: translateY(-7%);
+   
+  }
+}
+.input-holder{
+  margin-top: 2rem;
+  font-family: 'Chokokutai', cursive;
+  display: flex;
+   height: 8rem;
+  justify-content: space-between;
+
+
+}
+
+.begin-btn button ,.end-btn button{
+  background-image: url(png-transparent-brown-floral-frame-frame-euclidean-pretty-cute-pattern-ancient-box-miscellaneous-angle-geometric-pattern-thumbnail-removebg-preview.png);
+  width: 9.5rem;
+  height: 3.5rem;
+  font-size: 1.2rem;
+  font-family: 'Chokokutai', cursive;
+  border-radius: 2rem;
+  background-color: lightskyblue;
+  box-shadow: 0.4rem .3rem 1.2rem .0001rem black;
+  border: 0.2rem solid rgb(0, 153, 249);
+} 
+.begin-btn button:active ,.end-btn button:active{
+  transform: translateY(4%);
+  box-shadow: 0.4rem .3rem 1rem .0001rem black;
+}
+
+.gin-shadow{
+  position: absolute;
+  top: 79%;
+  left: 15%;
+  width: 8rem;
+  height: 1rem;
+  border-radius: 10rem;
+  background-color: rgba(0, 0, 0, 0.841);
+  filter: blur(.8rem);
+  animation: shd;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes shd {
+  0%{
+    transform: translateY(0%);
+
+  }
+  50%{
+    height: 2rem;
+    background-color: rgba(0, 0, 0, 0.651)
+  }
+}
+.input-box1,.input-box2,.input-box22,.input-box23{
+  border-radius: 2rem;
+  height: 3rem;
+  font-family: 'Chokokutai', cursive;
+  width: 9rem;
+  border: 0.2rem solid lightskyblue;
+   display: none;
+   margin-top: 1rem;
+   margin-left: .5rem;
+}
+.submit-data-btn{
+  margin-top:3rem;
+  width: 4rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  height: 3rem;
+  margin-left: 45%;
+  font-family: 'Chokokutai', cursive;
+  border-radius: 5rem;
+  background-color: rgb(251, 64, 64);
+  border: none;
+  box-shadow: 0.4rem .3rem 1rem .0001rem black;
+  border: 0.2rem solid rgb(255, 3, 3);
+  z-index: 3;
+}
+.submit-data-btn:hover{
+  transform: translateY(4%);
+  
+  box-shadow: 0.4rem .3rem 1rem .0001rem black;
+}
+/*processing timer*/
+.genie-thinking{
+    animation: img;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  position: fixed;
+  top: 38%;
+  left: 33%;
+}
+
+  .second-window{
+    display: none;
+  }
+  .st{
+     animation: one;
+     animation-duration: 2s;
+     animation-fill-mode: forwards;
+     animation-delay: 0.5s;
+     font-family: 'Chokokutai', cursive;
+     opacity: 0;
+     animation-iteration-count: 1;
+  }
+  @keyframes one{
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  }
+  .nd{
+    animation: one;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+    opacity: 0;
+    font-family: 'Chokokutai', cursive;
+    animation-iteration-count: 1;
+ }
+ @keyframes one{
+   from{
+     opacity: 0;
+   }
+   to{
+     opacity: 1;
+   }
+ }
+ 
+ .rd{
+  color: red;
+  animation: one;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 4.4s;
+  opacity: 0;
+  font-family: 'Chokokutai', cursive;
+  animation-iteration-count: 1;
+}
+@keyframes one{
+ from{
+   opacity: 0;
+ }
+ to{
+   opacity: 1;
+ }
+}
+.genie-answer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 13%;
+  left: 54%;
+  font-size: 1rem;
+  padding-top: 1rem;
+  background-color: whitesmoke;
+  height:14rem;
+  width: 27rem;
+  border: 0.3rem solid black;
+  border-style:groove;
+  border-radius: 20rem;
+  animation: img;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+
+}
+.thinkc1{
+  width: 3rem;
+  height: 3rem;
+  background-color: whitesmoke;
+  position: fixed;
+  top: 37%;
+  left: 53%;
+  border: 0.3rem solid black;
+  border-style:groove;
+  border-radius: 20rem;
+  animation: img;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}.thinkc2{
+  width: 3rem;
+  height: 3rem;
+  background-color: whitesmoke;
+  position: fixed;
+  top: 43%;
+  left: 50%;
+  border: 0.3rem solid black;
+  border-style:groove;
+  border-radius: 20rem;
+  animation: img;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.OnceMore{
+  width: 9.5rem;
+  height: 3.5rem;
+  font-size: 1.2rem;
+  font-family: 'Chokokutai', cursive;
+  border-radius: 2rem;
+  background-color: lightskyblue;
+  box-shadow: 0.4rem .3rem 1.2rem .0001rem black;
+  border: 0.2rem solid rgb(0, 153, 249);
+  position: absolute;
+  right: 10%;
+  top: 80%;
+}
